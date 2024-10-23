@@ -82,6 +82,7 @@
             option2Button.Size = new Size(60, 44);
             option2Button.TabIndex = 2;
             option2Button.UseVisualStyleBackColor = false;
+            option2Button.Click += option2Button_Click;
             // 
             // option1Label
             // 
@@ -120,6 +121,7 @@
             option3Button.Size = new Size(60, 44);
             option3Button.TabIndex = 5;
             option3Button.UseVisualStyleBackColor = false;
+            option3Button.Click += option3Button_Click;
             // 
             // option3Label
             // 
