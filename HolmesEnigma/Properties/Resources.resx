@@ -169,4 +169,52 @@
   <data name="page99image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\page99image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="page10sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page10sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="page11sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page11sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="page12sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page12sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="page13sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page13sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="page14sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page14sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="page15sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page15sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="page1sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page1sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="page2sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page2sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="page3sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page3sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="page4sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page4sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="page5sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page5sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="page6sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page6sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="page7sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page7sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="page8sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page8sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="page99sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page99sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="page9sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page9sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
