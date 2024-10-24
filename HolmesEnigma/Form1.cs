@@ -182,6 +182,7 @@ namespace HolmesEnigma
             {
                 case 1:
                     player = new SoundPlayer(Properties.Resources.page1sound);
+                    player.Play();
                     this.BackgroundImage = Properties.Resources.page1image;
                     outputLabel.Text = "You are Sherlock Holmes, investigating a stolen heirloom at the Lockwood Estate.\nWhere do you start your investigation?";
                     option1Label.Text = "Lockwood Estate";
@@ -197,6 +198,7 @@ namespace HolmesEnigma
                     break;
                 case 2:
                     player = new SoundPlayer(Properties.Resources.page2sound);
+                    player.Play();
                     this.BackgroundImage = Properties.Resources.page2image;
                     outputLabel.Text = "You find a broken window and muddy footprints";
                     option1Label.Text = "Examine the window";
@@ -210,6 +212,7 @@ namespace HolmesEnigma
                     break;
                 case 3:
                     player = new SoundPlayer(Properties.Resources.page3sound);
+                    player.Play();
                     this.BackgroundImage = Properties.Resources.page3image;
                     outputLabel.Text = "Lestrade mentions Tobias Slade, a suspect.";
                     option1Label.Text = "";
@@ -241,6 +244,7 @@ namespace HolmesEnigma
                     break;
                 case 4:
                     player = new SoundPlayer(Properties.Resources.page4sound);
+                    player.Play();
                     this.BackgroundImage = Properties.Resources.page4image;
                     outputLabel.Text = "Watson suggests questioning the family. Who do you talk to first?";
                     option1Label.Text = "The butler";
@@ -258,6 +262,7 @@ namespace HolmesEnigma
                     break;
                 case 5:
                     player = new SoundPlayer(Properties.Resources.page5sound);
+                    player.Play();
                     this.BackgroundImage = Properties.Resources.page5image;
                     option1Label.Text = "Take the cloth as evidence";
                     option2Label.Text = "Ignore it";
@@ -273,6 +278,7 @@ namespace HolmesEnigma
                     break;
                 case 6:
                     player = new SoundPlayer(Properties.Resources.page6sound);
+                    player.Play();
                     this.BackgroundImage = Properties.Resources.page6image;
                     outputLabel.Text = "Footprints lead to gardener's shed. Do you...";
                     option1Label.Text = "Confront the Gardener";
@@ -287,6 +293,7 @@ namespace HolmesEnigma
                 case 7:
                     player = new SoundPlayer(Properties.Resources.page7sound);
                     Refresh();
+                    player.Play();
                     this.BackgroundImage = Properties.Resources.page7image;
                     outputLabel.Text = "Tobias denies involvement but mentions a strange visitor to the estate.";
                     option1Label.Text = "Press him";
@@ -306,6 +313,7 @@ namespace HolmesEnigma
                 case 8:
                     player = new SoundPlayer(Properties.Resources.page8sound);
                     Refresh();
+                    player.Play();
                     this.BackgroundImage = Properties.Resources.page8image;
                     outputLabel.Text = "You overlook important clues and get stuck. Play Again?";
                     option1Label.Text = "Yes";
@@ -323,6 +331,7 @@ namespace HolmesEnigma
                     break;
                 case 9:
                     player = new SoundPlayer(Properties.Resources.page9sound);
+                    player.Play();
                     this.BackgroundImage = Properties.Resources.page9image;
                     outputLabel.Text = "The butler is nervous";
                     option1Label.Text = "Press him further";
@@ -336,6 +345,7 @@ namespace HolmesEnigma
                     break;
                 case 10:
                     player = new SoundPlayer(Properties.Resources.page10sound);
+                    player.Play();
                     this.BackgroundImage = Properties.Resources.page10image;
                     outputLabel.Text = "Lady Lockwood gives no useful info. Is she hiding something?";
                     option1Label.Text = "Trust her";
@@ -349,6 +359,7 @@ namespace HolmesEnigma
                     break;
                 case 11:
                     player = new SoundPlayer(Properties.Resources.page11sound);
+                    player.Play();
                     this.BackgroundImage = Properties.Resources.page11image;
                     outputLabel.Text = "The son is evasive";
                     option1Label.Text = "Investigate elsewhere";
@@ -362,6 +373,7 @@ namespace HolmesEnigma
                     break;
                 case 12:
                     player = new SoundPlayer(Properties.Resources.page12sound);
+                    player.Play();
                     this.BackgroundImage = Properties.Resources.page12image;
                     outputLabel.Text = "You find a hidden passage.";
                     option1Label.Text = "Open it";
@@ -375,6 +387,7 @@ namespace HolmesEnigma
                     break;
                 case 13:
                     player = new SoundPlayer(Properties.Resources.page13sound);
+                    player.Play();
                     this.BackgroundImage = Properties.Resources.page13image;
                     outputLabel.Text = "You find a trap and continue.";
                     option1Label.Text = "Disarm and enter vault";
@@ -388,6 +401,7 @@ namespace HolmesEnigma
                     break;
                 case 14:
                     player = new SoundPlayer(Properties.Resources.page14sound);
+                    player.Play();
                     this.BackgroundImage = Properties.Resources.page14image;
                     outputLabel.Text = "You overlook important clues and get stuck. Play Again?";
                     option1Label.Text = "Yes";
@@ -401,6 +415,7 @@ namespace HolmesEnigma
                     break;
                 case 15:
                     player = new SoundPlayer(Properties.Resources.page15sound);
+                    player.Play();
                     this.BackgroundImage = Properties.Resources.page15image;
                     outputLabel.Text = "The trap detonates while you disarm it, but you escape unharmed. However, you find no further clues. Play Again?";
                     option1Label.Text = "Yes";
@@ -414,6 +429,7 @@ namespace HolmesEnigma
                     break;
                 case 99:
                     player = new SoundPlayer(Properties.Resources.page99sound);
+                    player.Play();
                     this.BackgroundImage = Properties.Resources.page99image;
                     outputLabel.Text = "Thanks for playing.";
                     option1Label.Text = "";
