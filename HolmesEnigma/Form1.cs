@@ -18,6 +18,7 @@ namespace HolmesEnigma
 {
     public partial class Form1 : Form
     {
+        //Declaring variables
         int page = 1;
         SoundPlayer player = new SoundPlayer();
 
@@ -34,6 +35,7 @@ namespace HolmesEnigma
             option3Label.Text = "Talk to Dr.Watson for advice";
         }
 
+        //Telling what the first button does
         private void option1Button_Click(object sender, EventArgs e)
         {
             if (page == 1)
@@ -95,6 +97,7 @@ namespace HolmesEnigma
             DisplayPage();
         }
 
+        //Telling what the first label does
         private void option1Label_Click(object sender, EventArgs e)
         {
             if (page == 1)
@@ -156,6 +159,7 @@ namespace HolmesEnigma
             DisplayPage();
         }
 
+        //Telling what the second button does
         private void option2Button_Click(object sender, EventArgs e)
         {
             if (page == 1)
@@ -217,6 +221,7 @@ namespace HolmesEnigma
             DisplayPage();
         }
 
+        //Telling what the second label does
         private void option2Label_Click(object sender, EventArgs e)
         {
             if (page == 1)
@@ -278,6 +283,7 @@ namespace HolmesEnigma
             DisplayPage();
         }
 
+        //Telling what the third button does
         private void option3Button_Click(object sender, EventArgs e)
         {
             {
@@ -300,6 +306,7 @@ namespace HolmesEnigma
             }
         }
 
+        //Telling what the third label does
         private void option3Label_Click(object sender, EventArgs e)
         {
             if (page == 1)
@@ -320,6 +327,7 @@ namespace HolmesEnigma
             DisplayPage();
         }
 
+        //Declaring a function that uses switch-case statement to show the pages' uses
         public void DisplayPage()
         {
             switch (page)
