@@ -19,7 +19,7 @@ namespace HolmesEnigma
     public partial class Form1 : Form
     {
         int page = 1;
-        Random random = new Random();
+        SoundPlayer player = new SoundPlayer();
 
         public Form1()
         {
@@ -50,13 +50,41 @@ namespace HolmesEnigma
             {
                 page = 12;
             }
+            else if (page == 6)
+            {
+                page = 13;
+            }
+            else if (page == 7)
+            {
+                page = 12;
+            }
+            else if (page == 8)
+            {
+                page = 1;
+            }
             else if (page == 9)
             {
                 page = 12;
             }
+            else if (page == 10)
+            {
+                page = 6;
+            }
+            else if (page == 11)
+            {
+                page = 14;
+            }
             else if (page == 12)
             {
                 page = 15;
+            }
+            else if (page == 13)
+            {
+                page = 14;
+            }
+            else if (page == 14)
+            {
+                page = 1;
             }
             else if (page == 15)
             {
@@ -71,37 +99,81 @@ namespace HolmesEnigma
             {
                 page = 4;
             }
+            else if (page == 2)
+            {
+                page = 6;
+            }
+            else if (page == 4)
+            {
+                page = 10;
+            }
+            else if (page == 5)
+            {
+                page = 6;
+            }
+            else if (page == 6)
+            {
+                page = 12;
+            }
+            else if (page == 7)
+            {
+                page = 15;
+            }
+            else if (page == 8)
+            {
+                page = 99;
+            }
+            else if (page == 9)
+            {
+                page = 10;
+            }
+            else if (page == 10)
+            {
+                page = 12;
+            }
+            else if (page == 11)
+            {
+                page = 14;
+            }
+            else if (page == 12)
+            {
+                page = 13;
+            }
+            else if (page == 13)
+            {
+                page = 99;
+            }
+            else if (page == 14)
+            {
+                page = 99;
+            }
+            else if (page == 15)
+            {
+                page = 99;
+            }
             DisplayPage();
         }
 
         private void option3Button_Click(object sender, EventArgs e)
         {
-            if (page == 1)
             {
-                page = 3;
-            }
-            else if (page == 3)
-            {
-                int rand = random.Next(1, 100);
-                if (rand > 70)
+                if (page == 1)
                 {
-                    page = 7;
+                    page = 3;
+                    DisplayPage();
                 }
-                else
+                else if (page == 3)
                 {
-                    page = 8;
+                    DisplayPage();
+                    Refresh();
                 }
-            }
-            else if (page == 7)
-            {
-                page = 12;
-            }
-            else if (page == 12)
-            {
-                page = 15;
-            }
 
-            DisplayPage();
+                else if (page == 4)
+                {
+                    page = 11;
+                }
+                DisplayPage();
+            }
         }
 
         public void DisplayPage()
@@ -109,16 +181,21 @@ namespace HolmesEnigma
             switch (page)
             {
                 case 1:
+                    this.BackgroundImage = Properties.Resources.page1image;
                     outputLabel.Text = "You are Sherlock Holmes, investigating a stolen heirloom at the Lockwood Estate.\nWhere do you start your investigation?";
                     option1Label.Text = "Lockwood Estate";
                     option2Label.Text = "Scotland Yard";
                     option3Label.Text = "Talk to Dr.Watson for advice";
+                    option1Label.Enabled = true;
+                    option2Label.Enabled = true;
                     option3Label.Enabled = true;
-                    _ = option3Button.BackgroundImage = Properties.Resources.button_prototype2;
                     option3Button.Enabled = true;
+                    _ = option3Button.BackgroundImage = Properties.Resources.button_prototype2;
+                    _ = option1Button.BackgroundImage = Properties.Resources.button_prototype2;
+                    _ = option2Button.BackgroundImage = Properties.Resources.button_prototype2;
                     break;
-
                 case 2:
+                    this.BackgroundImage = Properties.Resources.page2image;
                     outputLabel.Text = "You find a broken window and muddy footprints";
                     option1Label.Text = "Examine the window";
                     option2Label.Text = "Follow the footprints";
@@ -126,27 +203,57 @@ namespace HolmesEnigma
                     option3Label.Enabled = false;
                     _ = option3Button.BackgroundImage = null;
                     option3Button.Enabled = false;
+                    _ = option1Button.BackgroundImage = Properties.Resources.button_prototype2;
+                    _ = option2Button.BackgroundImage = Properties.Resources.button_prototype2;
                     break;
                 case 3:
+                    this.BackgroundImage = Properties.Resources.page3image;
                     outputLabel.Text = "Lestrade mentions Tobias Slade, a suspect.";
                     option1Label.Text = "";
                     option2Label.Text = "";
                     option3Label.Text = "";
+                    option1Label.Enabled = false;
+                    option1Button.Enabled = false;
+                    option2Label.Enabled = false;
+                    option2Button.Enabled = false;
                     option3Label.Enabled = false;
-                    _ = option3Button.BackgroundImage = null;
                     option3Button.Enabled = false;
+                    _ = option1Button.BackgroundImage = null;
+                    _ = option2Button.BackgroundImage = null;
+                    _ = option3Button.BackgroundImage = null;
+                    Refresh();
                     Thread.Sleep(1000);
+                    Random randGen = new Random();
+                    int randomValue = randGen.Next(1, 101);
+                    Thread.Sleep(1000);
+                    if (randomValue >= 70)
+                    {
+                        page = 7;
+                    }
+                    else
+                    {
+                        page = 8;
+                    }
+
                     break;
                 case 4:
+                    this.BackgroundImage = Properties.Resources.page4image;
                     outputLabel.Text = "Watson suggests questioning the family. Who do you talk to first?";
                     option1Label.Text = "The butler";
                     option2Label.Text = "Lady Lockwood";
                     option3Label.Text = "Lockwood's Son";
                     option3Label.Enabled = true;
+                    option1Button.Enabled = true;
+                    option1Label.Enabled = true;
+                    option2Label.Enabled = true;
+                    option2Button.Enabled = true;
                     _ = option3Button.BackgroundImage = Properties.Resources.button_prototype2;
                     option3Button.Enabled = true;
+                    _ = option1Button.BackgroundImage = Properties.Resources.button_prototype2;
+                    _ = option2Button.BackgroundImage = Properties.Resources.button_prototype2;
                     break;
                 case 5:
+                    this.BackgroundImage = Properties.Resources.page5image;
                     option1Label.Text = "Take the cloth as evidence";
                     option2Label.Text = "Ignore it";
                     option3Label.Text = "";
@@ -156,8 +263,11 @@ namespace HolmesEnigma
                     outputLabel.Text = "You find a torn cloth at the window. Could this be from the thief?";
                     Thread.Sleep(1000);
                     outputLabel.Text = "You take the cloth as evidence.";
+                    _ = option1Button.BackgroundImage = Properties.Resources.button_prototype2;
+                    _ = option2Button.BackgroundImage = Properties.Resources.button_prototype2;
                     break;
                 case 6:
+                    this.BackgroundImage = Properties.Resources.page6image;
                     outputLabel.Text = "Footprints lead to gardener's shed. Do you...";
                     option1Label.Text = "Confront the Gardener";
                     option2Label.Text = "Search the shed quietly";
@@ -165,26 +275,46 @@ namespace HolmesEnigma
                     option3Label.Enabled = false;
                     _ = option3Button.BackgroundImage = null;
                     option3Button.Enabled = false;
+                    _ = option1Button.BackgroundImage = Properties.Resources.button_prototype2;
+                    _ = option2Button.BackgroundImage = Properties.Resources.button_prototype2;
                     break;
                 case 7:
+                    Refresh();
+                    this.BackgroundImage = Properties.Resources.page7image;
                     outputLabel.Text = "Tobias denies involvement but mentions a strange visitor to the estate.";
                     option1Label.Text = "Press him";
                     option2Label.Text = "Investigate the visitor";
                     option3Label.Text = "";
+                    option1Button.Enabled = true;
+                    option1Label.Enabled = true;
+                    option2Label.Enabled = true;
+                    option2Button.Enabled = true;
+                    option3Label.Enabled = false;
                     option3Label.Enabled = false;
                     _ = option3Button.BackgroundImage = null;
                     option3Button.Enabled = false;
+                    _ = option1Button.BackgroundImage = Properties.Resources.button_prototype2;
+                    _ = option2Button.BackgroundImage = Properties.Resources.button_prototype2;
                     break;
                 case 8:
+                    Refresh();
+                    this.BackgroundImage = Properties.Resources.page8image;
                     outputLabel.Text = "You overlook important clues and get stuck. Play Again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
                     option3Label.Text = "";
+                    option1Button.Enabled = true;
+                    option1Label.Enabled = true;
+                    option2Label.Enabled = true;
+                    option2Button.Enabled = true;
                     option3Label.Enabled = false;
                     _ = option3Button.BackgroundImage = null;
                     option3Button.Enabled = false;
+                    _ = option1Button.BackgroundImage = Properties.Resources.button_prototype2;
+                    _ = option2Button.BackgroundImage = Properties.Resources.button_prototype2;
                     break;
                 case 9:
+                    this.BackgroundImage = Properties.Resources.page9image;
                     outputLabel.Text = "The butler is nervous";
                     option1Label.Text = "Press him further";
                     option2Label.Text = "Leave and investigate someone else";
@@ -192,8 +322,11 @@ namespace HolmesEnigma
                     option3Label.Enabled = false;
                     _ = option3Button.BackgroundImage = null;
                     option3Button.Enabled = false;
+                    _ = option1Button.BackgroundImage = Properties.Resources.button_prototype2;
+                    _ = option2Button.BackgroundImage = Properties.Resources.button_prototype2;
                     break;
                 case 10:
+                    this.BackgroundImage = Properties.Resources.page10image;
                     outputLabel.Text = "Lady Lockwood gives no useful info. Is she hiding something?";
                     option1Label.Text = "Trust her";
                     option2Label.Text = "Suspect her";
@@ -201,8 +334,11 @@ namespace HolmesEnigma
                     option3Label.Enabled = false;
                     _ = option3Button.BackgroundImage = null;
                     option3Button.Enabled = false;
+                    _ = option1Button.BackgroundImage = Properties.Resources.button_prototype2;
+                    _ = option2Button.BackgroundImage = Properties.Resources.button_prototype2;
                     break;
                 case 11:
+                    this.BackgroundImage = Properties.Resources.page11image;
                     outputLabel.Text = "The son is evasive";
                     option1Label.Text = "Investigate elsewhere";
                     option2Label.Text = "Confront him";
@@ -210,8 +346,11 @@ namespace HolmesEnigma
                     option3Label.Enabled = false;
                     _ = option3Button.BackgroundImage = null;
                     option3Button.Enabled = false;
+                    _ = option1Button.BackgroundImage = Properties.Resources.button_prototype2;
+                    _ = option2Button.BackgroundImage = Properties.Resources.button_prototype2;
                     break;
                 case 12:
+                    this.BackgroundImage = Properties.Resources.page12image;
                     outputLabel.Text = "You find a hidden passage.";
                     option1Label.Text = "Open it";
                     option2Label.Text = "Search for traps first";
@@ -219,8 +358,11 @@ namespace HolmesEnigma
                     option3Label.Enabled = false;
                     _ = option3Button.BackgroundImage = null;
                     option3Button.Enabled = false;
+                    _ = option1Button.BackgroundImage = Properties.Resources.button_prototype2;
+                    _ = option2Button.BackgroundImage = Properties.Resources.button_prototype2;
                     break;
                 case 13:
+                    this.BackgroundImage = Properties.Resources.page13image;
                     outputLabel.Text = "You find a trap and continue.";
                     option1Label.Text = "Disarm and enter vault";
                     option2Label.Text = "Leave";
@@ -228,8 +370,11 @@ namespace HolmesEnigma
                     option3Label.Enabled = false;
                     _ = option3Button.BackgroundImage = null;
                     option3Button.Enabled = false;
+                    _ = option1Button.BackgroundImage = Properties.Resources.button_prototype2;
+                    _ = option2Button.BackgroundImage = Properties.Resources.button_prototype2;
                     break;
                 case 14:
+                    this.BackgroundImage = Properties.Resources.page14image;
                     outputLabel.Text = "You overlook important clues and get stuck. Play Again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
@@ -237,8 +382,11 @@ namespace HolmesEnigma
                     option3Label.Enabled = false;
                     _ = option3Button.BackgroundImage = null;
                     option3Button.Enabled = false;
+                    _ = option1Button.BackgroundImage = Properties.Resources.button_prototype2;
+                    _ = option2Button.BackgroundImage = Properties.Resources.button_prototype2;
                     break;
                 case 15:
+                    this.BackgroundImage = Properties.Resources.page15image;
                     outputLabel.Text = "The trap detonates while you disarm it, but you escape unharmed. However, you find no further clues. Play Again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
@@ -246,8 +394,11 @@ namespace HolmesEnigma
                     option3Label.Enabled = false;
                     _ = option3Button.BackgroundImage = null;
                     option3Button.Enabled = false;
+                    _ = option1Button.BackgroundImage = Properties.Resources.button_prototype2;
+                    _ = option2Button.BackgroundImage = Properties.Resources.button_prototype2;
                     break;
                 case 99:
+                    this.BackgroundImage = Properties.Resources.page99image;
                     outputLabel.Text = "Thanks for playing.";
                     option1Label.Text = "";
                     option2Label.Text = "";
@@ -256,7 +407,9 @@ namespace HolmesEnigma
                     _ = option2Button.BackgroundImage = null;
                     _ = option3Button.BackgroundImage = null;
                     option3Button.Enabled = false;
+                    Refresh();
                     Thread.Sleep(2000);
+                    Application.Exit();
                     break;
             }
         }
