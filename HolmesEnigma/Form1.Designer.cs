@@ -94,6 +94,7 @@
             option1Label.Name = "option1Label";
             option1Label.Size = new Size(885, 48);
             option1Label.TabIndex = 3;
+            option1Label.Click += option1Label_Click;
             // 
             // option2Label
             // 
@@ -105,6 +106,7 @@
             option2Label.Name = "option2Label";
             option2Label.Size = new Size(885, 48);
             option2Label.TabIndex = 4;
+            option2Label.Click += option2Label_Click;
             // 
             // option3Button
             // 
@@ -133,6 +135,7 @@
             option3Label.Name = "option3Label";
             option3Label.Size = new Size(885, 48);
             option3Label.TabIndex = 6;
+            option3Label.Click += option3Label_Click;
             // 
             // Form1
             // 

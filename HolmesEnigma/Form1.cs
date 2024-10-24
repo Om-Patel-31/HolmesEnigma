@@ -26,6 +26,8 @@ namespace HolmesEnigma
             InitializeComponent();
 
             //Opening page
+            player = new SoundPlayer(Properties.Resources.page1sound);
+            player.Play();
             outputLabel.Text = "You are Sherlock Holmes, investigating a stolen heirloom at the Lockwood Estate.\nWhere do you start your investigation?";
             option1Label.Text = "Lockwood Estate";
             option2Label.Text = "Scotland Yard";
@@ -33,6 +35,67 @@ namespace HolmesEnigma
         }
 
         private void option1Button_Click(object sender, EventArgs e)
+        {
+            if (page == 1)
+            {
+                page = 2;
+            }
+            else if (page == 2)
+            {
+                page = 5;
+            }
+            else if (page == 4)
+            {
+                page = 9;
+            }
+            else if (page == 5)
+            {
+                page = 12;
+            }
+            else if (page == 6)
+            {
+                page = 13;
+            }
+            else if (page == 7)
+            {
+                page = 12;
+            }
+            else if (page == 8)
+            {
+                page = 1;
+            }
+            else if (page == 9)
+            {
+                page = 12;
+            }
+            else if (page == 10)
+            {
+                page = 6;
+            }
+            else if (page == 11)
+            {
+                page = 14;
+            }
+            else if (page == 12)
+            {
+                page = 15;
+            }
+            else if (page == 13)
+            {
+                page = 14;
+            }
+            else if (page == 14)
+            {
+                page = 1;
+            }
+            else if (page == 15)
+            {
+                page = 1;
+            }
+            DisplayPage();
+        }
+
+        private void option1Label_Click(object sender, EventArgs e)
         {
             if (page == 1)
             {
@@ -154,6 +217,67 @@ namespace HolmesEnigma
             DisplayPage();
         }
 
+        private void option2Label_Click(object sender, EventArgs e)
+        {
+            if (page == 1)
+            {
+                page = 4;
+            }
+            else if (page == 2)
+            {
+                page = 6;
+            }
+            else if (page == 4)
+            {
+                page = 10;
+            }
+            else if (page == 5)
+            {
+                page = 6;
+            }
+            else if (page == 6)
+            {
+                page = 12;
+            }
+            else if (page == 7)
+            {
+                page = 15;
+            }
+            else if (page == 8)
+            {
+                page = 99;
+            }
+            else if (page == 9)
+            {
+                page = 10;
+            }
+            else if (page == 10)
+            {
+                page = 12;
+            }
+            else if (page == 11)
+            {
+                page = 14;
+            }
+            else if (page == 12)
+            {
+                page = 13;
+            }
+            else if (page == 13)
+            {
+                page = 99;
+            }
+            else if (page == 14)
+            {
+                page = 99;
+            }
+            else if (page == 15)
+            {
+                page = 99;
+            }
+            DisplayPage();
+        }
+
         private void option3Button_Click(object sender, EventArgs e)
         {
             {
@@ -174,6 +298,26 @@ namespace HolmesEnigma
                 }
                 DisplayPage();
             }
+        }
+
+        private void option3Label_Click(object sender, EventArgs e)
+        {
+            if (page == 1)
+            {
+                page = 3;
+                DisplayPage();
+            }
+            else if (page == 3)
+            {
+                DisplayPage();
+                Refresh();
+            }
+
+            else if (page == 4)
+            {
+                page = 11;
+            }
+            DisplayPage();
         }
 
         public void DisplayPage()
