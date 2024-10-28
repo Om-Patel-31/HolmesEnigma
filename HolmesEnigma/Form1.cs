@@ -27,12 +27,12 @@ namespace HolmesEnigma
             InitializeComponent();
 
             //Opening page
-            player = new SoundPlayer(Properties.Resources.page1sound);
-            player.Play();
             outputLabel.Text = "You are Sherlock Holmes, investigating a stolen heirloom at the Lockwood Estate.\nWhere do you start your investigation?";
             option1Label.Text = "Lockwood Estate";
             option2Label.Text = "Scotland Yard";
             option3Label.Text = "Talk to Dr.Watson for advice";
+            player = new SoundPlayer(Properties.Resources.page1sound);
+            player.Play();
         }
 
         //Telling what the first button does
@@ -416,7 +416,7 @@ namespace HolmesEnigma
                     player = new SoundPlayer(Properties.Resources.page5sound);
                     player.Play();
                     this.BackgroundImage = Properties.Resources.page5image;
-                    option1Label.Text = "Take the cloth as evidence";
+                    option1Label.Text = "Take the cloth as evidence?";
                     option2Label.Text = "Ignore it";
                     option3Label.Text = "";
                     option3Label.Enabled = false;
