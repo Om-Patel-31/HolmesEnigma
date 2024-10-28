@@ -43,7 +43,7 @@
             outputLabel.BackColor = Color.Transparent;
             outputLabel.FlatStyle = FlatStyle.Flat;
             outputLabel.Font = new Font("Cinzel", 18F);
-            outputLabel.ForeColor = Color.FromArgb(212, 175, 55);
+            outputLabel.ForeColor = Color.DarkGoldenrod;
             outputLabel.Location = new Point(12, 9);
             outputLabel.Name = "outputLabel";
             outputLabel.Size = new Size(982, 128);
@@ -94,6 +94,7 @@
             option1Label.Name = "option1Label";
             option1Label.Size = new Size(885, 48);
             option1Label.TabIndex = 3;
+            option1Label.TextAlign = ContentAlignment.MiddleLeft;
             option1Label.Click += option1Label_Click;
             // 
             // option2Label
@@ -102,10 +103,11 @@
             option2Label.FlatStyle = FlatStyle.Flat;
             option2Label.Font = new Font("Cinzel", 16F, FontStyle.Bold);
             option2Label.ForeColor = Color.FromArgb(255, 253, 208);
-            option2Label.Location = new Point(78, 592);
+            option2Label.Location = new Point(78, 596);
             option2Label.Name = "option2Label";
             option2Label.Size = new Size(885, 48);
             option2Label.TabIndex = 4;
+            option2Label.TextAlign = ContentAlignment.MiddleLeft;
             option2Label.Click += option2Label_Click;
             // 
             // option3Button
@@ -131,10 +133,11 @@
             option3Label.FlatStyle = FlatStyle.Flat;
             option3Label.Font = new Font("Cinzel", 16F, FontStyle.Bold);
             option3Label.ForeColor = Color.FromArgb(255, 253, 208);
-            option3Label.Location = new Point(78, 654);
+            option3Label.Location = new Point(78, 665);
             option3Label.Name = "option3Label";
             option3Label.Size = new Size(885, 48);
             option3Label.TabIndex = 6;
+            option3Label.TextAlign = ContentAlignment.MiddleLeft;
             option3Label.Click += option3Label_Click;
             // 
             // Form1
