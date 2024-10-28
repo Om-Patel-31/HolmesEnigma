@@ -1,3 +1,7 @@
+//A simple Sherlock Holmes mystery game
+//Created by: Om Patel
+//Date: 28 October, 2024
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -333,20 +337,24 @@ namespace HolmesEnigma
             switch (page)
             {
                 case 1:
+                    //Declaring the background image of a form and the sound that needs to be played on each page
                     player = new SoundPlayer(Properties.Resources.page1sound);
                     player.Play();
                     this.BackgroundImage = Properties.Resources.page1image;
 
+                    //Declaring the text for all the labels
                     outputLabel.Text = "You are Sherlock Holmes, investigating a stolen heirloom at the Lockwood Estate.\nWhere do you start your investigation?";
                     option1Label.Text = "Lockwood Estate";
                     option2Label.Text = "Scotland Yard";
                     option3Label.Text = "Talk to Dr.Watson for advice";
 
+                    //Declaring what needs to be enabled
                     option1Label.Enabled = true;
                     option2Label.Enabled = true;
                     option3Label.Enabled = true;
                     option3Button.Enabled = true;
 
+                    //Declaring the background images for respective buttons
                     option3Button.BackgroundImage = Properties.Resources.button_prototype2;
                     option1Button.BackgroundImage = Properties.Resources.button_prototype2;
                     option2Button.BackgroundImage = Properties.Resources.button_prototype2;
@@ -390,12 +398,14 @@ namespace HolmesEnigma
                     option3Button.BackgroundImage = null;
                     
                     Refresh();
+                    //Making it sleep for a specific time period
                     Thread.Sleep(5000);
                     
+                    //Considering a random generator
                     Random randGen = new Random();
                     int randomValue = randGen.Next(1, 11);
                     
-                    Thread.Sleep(5000);
+                    //using if...else to tell what page should be next
                     if (randomValue >= 7)
                     {
                         page = 7;
@@ -432,6 +442,8 @@ namespace HolmesEnigma
                     player.Play();
                     this.BackgroundImage = Properties.Resources.page5image;
                     
+                    outputLabel.Text = "You find a torn cloth at the window. Could this be from the thief?";
+                    outputLabel.Text += " You take the cloth as evidence?";
                     option1Label.Text = "Take the cloth as evidence";
                     option2Label.Text = "Ignore it";
                     option3Label.Text = "";
@@ -440,11 +452,8 @@ namespace HolmesEnigma
                     option3Button.BackgroundImage = null;
                     option3Button.Enabled = false;
                     
-                    outputLabel.Text = "You find a torn cloth at the window. Could this be from the thief?";
                     Refresh();
                     Thread.Sleep(2000);
-                    
-                    outputLabel.Text += " You take the cloth as evidence?";
                     
                     option1Button.BackgroundImage = Properties.Resources.button_prototype2;
                     option2Button.BackgroundImage = Properties.Resources.button_prototype2;
@@ -648,6 +657,7 @@ namespace HolmesEnigma
                     Refresh();
                     Thread.Sleep(2000);
                     
+                    //Closing the Application
                     Application.Exit();
                     break;
             }
