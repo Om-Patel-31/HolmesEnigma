@@ -382,9 +382,9 @@ namespace HolmesEnigma
                     Refresh();
                     Thread.Sleep(1000);
                     Random randGen = new Random();
-                    int randomValue = randGen.Next(1, 101);
+                    int randomValue = randGen.Next(1, 11);
                     Thread.Sleep(1000);
-                    if (randomValue >= 70)
+                    if (randomValue >= 7)
                     {
                         page = 7;
                     }
@@ -569,7 +569,7 @@ namespace HolmesEnigma
                     player = new SoundPlayer(Properties.Resources.page15sound);
                     player.Play();
                     this.BackgroundImage = Properties.Resources.page15image;
-                    outputLabel.Text = "The trap detonates while you disarm it, but you escape unharmed. However, you find no further clues. Play Again?";
+                    outputLabel.Text = "You find the heirloom. It was an inside job! Congrats! Case Solved. Play Again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
                     option3Label.Text = "";
