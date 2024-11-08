@@ -362,7 +362,7 @@ namespace HolmesEnigma
                 case 2:
                     player = new SoundPlayer(Properties.Resources.page2sound);
                     player.Play();
-                    this.BackgroundImage = Properties.Resources.page2image;
+                    this.BackgroundImage = Properties.Resources.page2image1;
 
                     outputLabel.Text = "You find a broken window and muddy footprints";
                     option1Label.Text = "Examine the window";
@@ -379,7 +379,7 @@ namespace HolmesEnigma
                 case 3:
                     player = new SoundPlayer(Properties.Resources.page3sound);
                     player.Play();
-                    this.BackgroundImage = Properties.Resources.page3image;
+                    this.BackgroundImage = Properties.Resources.page3image1;
                     
                     outputLabel.Text = "Lestrade mentions Tobias Slade, a suspect.";
                     option1Label.Text = "";
@@ -419,7 +419,7 @@ namespace HolmesEnigma
                 case 4:
                     player = new SoundPlayer(Properties.Resources.page4sound);
                     player.Play();
-                    this.BackgroundImage = Properties.Resources.page4image;
+                    this.BackgroundImage = Properties.Resources.page4image1;
                     
                     outputLabel.Text = "Watson suggests questioning the family. Who do you talk to first?";
                     option1Label.Text = "The butler";

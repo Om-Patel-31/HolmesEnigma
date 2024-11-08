@@ -195,6 +195,16 @@ namespace HolmesEnigma.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap page1image1 {
+            get {
+                object obj = ResourceManager.GetObject("page1image1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream page1sound {
@@ -209,6 +219,16 @@ namespace HolmesEnigma.Properties {
         internal static System.Drawing.Bitmap page2image {
             get {
                 object obj = ResourceManager.GetObject("page2image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap page2image1 {
+            get {
+                object obj = ResourceManager.GetObject("page2image1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,6 +253,16 @@ namespace HolmesEnigma.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap page3image1 {
+            get {
+                object obj = ResourceManager.GetObject("page3image1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream page3sound {
@@ -247,6 +277,16 @@ namespace HolmesEnigma.Properties {
         internal static System.Drawing.Bitmap page4image {
             get {
                 object obj = ResourceManager.GetObject("page4image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap page4image1 {
+            get {
+                object obj = ResourceManager.GetObject("page4image1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
